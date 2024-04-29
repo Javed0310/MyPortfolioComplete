@@ -1,0 +1,9 @@
+body {
+    height: auto;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+}

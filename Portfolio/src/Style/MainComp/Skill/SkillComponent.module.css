@@ -1,0 +1,26 @@
+.skillContainer {
+    width: 85%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    overflow-x: scroll;
+    margin: auto;
+}
+
+.skillContainer::-webkit-scrollbar {
+    display: inline;
+    scroll-behavior: smooth;
+    height: fit-content;
+    padding: 0px 30px;
+    visibility: hidden;
+
+}
+
+@media (min-width: 412px) and (max-width:576px) {
+    .skillContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}

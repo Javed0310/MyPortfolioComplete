@@ -1,0 +1,59 @@
+.navbardiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    padding: 5px;
+    z-index: 5;
+    border-bottom: .5px solid black;
+}
+
+
+
+.listItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.listitems a {
+    color: white;
+}
+
+
+
+.listitems a:hover {
+    color: yellow;
+}
+
+.listitems a:visited {
+    color: yellow;
+}
+
+.listitems {
+    border-width: 0%;
+    position: relative;
+}
+
+.listitems:hover {
+
+    border-bottom: solid yellow;
+    transition: 1s linear ease-in;
+
+}
+
+
+
+@media screen and (max-width:414px) {
+    .navbardiv {
+        width: 414px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .listItemContainer {
+        display: none;
+    }
+}

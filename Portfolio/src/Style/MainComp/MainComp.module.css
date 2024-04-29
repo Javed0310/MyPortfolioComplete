@@ -1,0 +1,159 @@
+.mainComp {
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    padding-top: 7%;
+    padding-bottom: 2%;
+
+
+}
+
+.leftContent {
+    width: 50%;
+    margin-left: 0px;
+    padding: 5px 10px;
+    transform: translate(20px, 20px);
+    animation: text_animation .5s linear ease;
+
+}
+
+.imgCard {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes text_animation {
+    0% {
+        transform: translate(0px, 0xp);
+    }
+
+    100% {
+        transform: translate(100px, 100px);
+        transition: all .8s ease;
+    }
+}
+
+.leftContent p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+.typing_animation {
+    display: flex;
+    width: 0%;
+    overflow: hidden;
+    border-right: .1em solid orange;
+    /* Adjust the cursor style */
+    white-space: nowrap;
+    animation: typing 4s steps(12, end) infinite, blink-caret .8s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        content: "FrontEnd Developer";
+    }
+
+
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    10% {
+        border-color: orange;
+        color: white;
+    }
+
+    50% {
+        border-color: orange;
+        color: white;
+    }
+
+    70% {
+        border-color: orange;
+        color: white;
+    }
+
+    /* Adjust cursor color */
+}
+
+
+.hireMeBtn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid yellow;
+    width: 200px;
+}
+
+
+.hireMeBtn:hover {
+    border: none;
+    background-color: yellow;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 20px yellow;
+    transition: 1s linear ease-in-out;
+}
+
+
+
+
+@media (min-width: 412px) and (max-width:576px) {
+    .mainComp {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        margin: 0px;
+        padding-top: 20%;
+        padding-bottom: 10px;
+        overflow: hidden;
+    }
+
+
+
+
+    .leftContent {
+        width: 300px;
+        padding: 5px;
+        display: block;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+
+
+    .typing_animation {
+        width: 0%;
+        font-size: 23px;
+    }
+
+    .imgCard {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 15%;
+        left: auto;
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,63 @@
+.contactUsMain {
+    width: 100%;
+    height: 89.6vh;
+    position: relative;
+}
+
+.contactHeading {
+    margin-top: 10px;
+}
+
+.contactFields {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.Contactform {
+    align-content: center;
+    text-align: center;
+}
+
+.textArea {
+    width: 100%;
+}
+
+@media (min-width: 412px) and (max-width:576px) {
+    .contactUsMain {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .contactHeading {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .contactFields {
+        width: 80%;
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .Contactform {
+        width: 80%;
+        height: 80%;
+
+    }
+
+    .textArea {
+        width: 100%;
+        height: 50%;
+        
+    }
+}
