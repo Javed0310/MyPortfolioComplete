@@ -9,12 +9,15 @@
     border-bottom: .5px solid black;
 }
 
-
+.sidebarIcon {
+    visibility: hidden;
+}
 
 .listItemContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    visibility: visible;
     padding: 5px;
 }
 
@@ -46,14 +49,22 @@
 
 
 
-@media screen and (max-width:414px) {
+@media (min-width:395px) and (max-width:576px) {
     .navbardiv {
         width: 414px;
         display: block;
         overflow: hidden;
     }
 
+    .sidebarIcon {
+        visibility: visible;
+    }
+
     .listItemContainer {
         display: none;
+        visibility: hidden;
     }
+
+
+
 }

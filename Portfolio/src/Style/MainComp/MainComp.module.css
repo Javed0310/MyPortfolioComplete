@@ -114,7 +114,7 @@
 
 
 
-@media (min-width: 412px) and (max-width:576px) {
+@media (min-width:395px) and (max-width:576px) {
     .mainComp {
         width: 100%;
         height: auto;

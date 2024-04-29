@@ -27,7 +27,7 @@
     width: 100%;
 }
 
-@media (min-width: 412px) and (max-width:576px) {
+@media (min-width:395px) and (max-width:576px) {
     .contactUsMain {
         width: 100%;
         height: 100vh;

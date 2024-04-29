@@ -1,8 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import style from "../../Style/Navbar/Navbar.module.css";
-import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { tabAction } from "../../store/navbar/navbarLink";
+import { HashLink as Link } from "react-router-hash-link";
+import { HiBars3 } from "react-icons/hi2";
 const NavBar = () => {
   const dispatch = useDispatch();
   const tabslice = useSelector((store) => store.tabSlice);
@@ -17,7 +18,11 @@ const NavBar = () => {
           <a className="navbar-brand text-white ms-4 fs-3 fw-bold" href="#">
             <span className="fs-3 text-warning">Port</span>folio
           </a>
-
+          <div className={`mt-2 ${style.sidebarIcon}`}>
+            <span>
+              <HiBars3 size={30} color="white" />
+            </span>
+          </div>
           <div className={` ${style.listItemContainer}`}>
             <ul className="d-flex justify-content-between mb-2 mb-lg-0 ">
               <li
@@ -25,7 +30,7 @@ const NavBar = () => {
                 onClick={() => handlerTabAction("Home")}
               >
                 <Link
-                  to="/Home"
+                  to="#Home"
                   className="nav-link active"
                   aria-current="page"
                 >
@@ -36,7 +41,7 @@ const NavBar = () => {
                 className={`nav-item ms-4 ${style.listitems}`}
                 onClick={() => handlerTabAction("Skill")}
               >
-                <Link to="/Skill" className="nav-link " aria-current="page">
+                <Link to="#Skill" className="nav-link " aria-current="page">
                   Skill's
                 </Link>
               </li>
@@ -44,7 +49,7 @@ const NavBar = () => {
                 className={`nav-item ms-4 ${style.listitems}`}
                 onClick={() => handlerTabAction("AboutUs")}
               >
-                <Link to="/AboutUs" className="nav-link " aria-current="page">
+                <Link to="#AboutUs" className="nav-link " aria-current="page">
                   AboutUs
                 </Link>
               </li>
@@ -52,7 +57,7 @@ const NavBar = () => {
                 className={`nav-item ms-4 ${style.listitems}`}
                 onClick={() => handlerTabAction("ContactUs")}
               >
-                <Link to="/ContactUs" className="nav-link " aria-current="page">
+                <Link to="#ContactUs" className="nav-link " aria-current="page">
                   ContactUs
                 </Link>
               </li>
